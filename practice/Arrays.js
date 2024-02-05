@@ -9,7 +9,7 @@
 //Syntax:
 // 1.)
 const array=[1,2,3,5,6];
-console.log(array);
+// console.log(array);
 //2.)
 const array1=new Array(1,2,3,4,5);
 // console.log(array1);
@@ -45,6 +45,43 @@ const array1=new Array(1,2,3,4,5);
                      //7.) join: It converts the array into string seperated ny commas
 // console.log(array.join());
 // console.log(typeof(array.join()));
+
+// ################################### array2 #######################
+// array.push(array1);
+// console.log(array);//it pushed the array1 as an array in array.
+
+//concat: it gives an array ,with concating both the array.
+// const merged_array=array.concat(array1);
+// console.log(merged_array);
+
+//spread: it spread the every elememnt of the each array,then gives it. 
+//benefit of spread is we con combine multiple array is single go.
+
+// const better_merged=[...array,...array1];
+// console.log(better_merged);
+// console.log(typeof(better_merged));
+
+//flat:
+// const array2=[1,2,4,[2,3,4],5,6,7,[[1,2],[3,4]]];
+// const array3=array2.flat(1);//it return a array ,with all subarray concated with given depth.
+// console.log(array3);
+
+//isArray(): it checks that it is array or not.
+let name="ritesh";
+// console.log(Array.isArray(name));
+//from(): converts into array/
+let name_array=Array.from(name);
+// console.log(name_array);
+//intrestenig case of ,from method when we pass an object into it.
+// it will give an empty array until we tell it that create array on the basis of keys or values.
+// console.log(Array.from({name1 :"ritesh"}))
+
+
+//of():It creates an arrray based on the given arguments
+let created_array=Array.of("ritesh","deepa","rajesh","soumyadip",1);
+console.log(created_array);
+
+
 
 
                   
