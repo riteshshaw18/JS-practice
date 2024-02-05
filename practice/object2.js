@@ -54,6 +54,8 @@ let obj5={...obj3,...obj4};
 console.log(Object.keys(obj1));//it gives the key in the form of array
 console.log(Object.values(obj1));////it gives the value in the form of array
 console.log(obj1.hasOwnProperty("isLoggedIn"));//it checks the given object contains or mot tge given property.
+console.log(Object.entries(obj1));//it gives the key-value pair in the form of array
+
 
 
 
