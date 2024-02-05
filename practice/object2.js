@@ -58,4 +58,17 @@ console.log(Object.entries(obj1));//it gives the key-value pair in the form of a
 
 
 
+// ###################### object destructure ############################### 
 
+let course={
+    course_name:"chai aur code",
+    course_instructor:"hitesh",
+    price:999
+}
+
+console.log(course.course_instructor);//of we have to print this value multiple time sthen we destructure the object.
+const {course_instructor}=course;//ab . use karne ki jarurat nhi hai,we can directly acces 
+console.log(course_instructor);
+//if we want to call it something els e,then it can be also done.
+const {course_instructor:ins}=course; //now we can use only ins
+console.log(ins);
